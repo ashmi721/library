@@ -1,1129 +1,562 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Library Manegement System</title>
-    <!-- css link -->
-   
-  </head>
-  <body>
-    
-
-<!-- nav-bar section -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Library Manegement System</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <a class="navbar-brand" href="#">  <img src="img/logo.webp" alt="" width="80" height="50" class="logo-img ms-2"></a>
-   
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav m-auto gap-4">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="feature.html">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="books.html">Books</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="about.html"> About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Solutions
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="fees.html">Fee Management</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="books-manage.html">Books Management</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="library-manage.html">Library Management</a></li>
-            
+<!-- fontawesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- nav-bar section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <a class="navbar-brand" href="#">  <img src="img/logo.webp" alt="" width="80" height="50" class="logo-img ms-2"></a>
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto gap-4">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="feature.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="about.html"> About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Solutions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="fees.html">Fee Management</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="books-manage.html">Books Management</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="library-manage.html">Library Management</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="contact.html">Contact Us</a>
+          </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="contact.html">Contact Us</a>
-        </li>
-        </ul>
-    </div>
-    
-    <!-- Button trigger modal -->
+      </div>
+      
+      <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Sign Up
+ Sign Up
 </button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      
-      <form action="" method="">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
         
-        <div class="form-floating">
-          <input type="text" class="form-control" id="floatingInput"  name="name" placeholder="enter name">
-          <label for="floatingInput">Name</label>
-        </div>
-        <div class="form-floating">
-          <input type="text" class="form-control" id="floatingInput"  name="user" placeholder="enter a username">
-          <label for="floatingInput">Username</label>
-        </div>
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput"  name="email" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword"  name="password" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div>
-    
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-       
-        <div class="modal-footer">
-          <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-        </div>
-      </form>
+        <form action="" method="">
+          
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput"  name="name" placeholder="enter name">
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput"  name="user" placeholder="enter a username">
+            <label for="floatingInput">Username</label>
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput"  name="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword"  name="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+         
+          <div class="modal-footer">
+            <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </form>
 
+      </div>
+      
     </div>
+  </div>
+</div>
     
-  </div>
-</div>
-</div>
-  
-  
-  
-  </div>
-</nav>
+    
+    
+    </div>
+  </nav>
 
+
+
+  <!-- main section -->
 
  
-  <!-- books section -->
-  <div class="container mt-5">
-    <h1 class=" text-primary mt-3 mb-5">Catogories & Pricing</h1>
-    <hr class="dropdown-divider">
 
-   <h3 class="his-one text-success fs-4 ">Programming Books</h3>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/c++2.jpg" width="90%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="p-4 p-md-5 mb-4 text-white rounded" style="background-color: rgb(166, 179, 209); height: 30rem;">
+            <div class="col-md-6 px-0 m-auto text-center">
+              <h3 class="header-one text-dark fw-5  mt-5 mx-5 my-5">Get YOur New Books Of All Types , with the Best Price...</h3><br>
+              <form class="d-flex text-center  ">
+                <input class="form-control w-75 p-3 " type="search" placeholder="Search Books" aria-label="Search">
+                <button class="btn btn-outline-primary w-25 ms-3 text-white" type="submit">Search</button>
+              </form>
             </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/c.jpg" width="90%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/c.png" width="100%" height="200"  alt="">
-
-          <div class="card-body">
-            <a href="#"> 
-              <i class="fa-solid fa-star text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star-half-stroke text-warning"></i>
-            </a>
-            <hr>
-            <p class="card-text text-danger">₹. 1000</p>
-            
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary ">BUY Now</button>
-                <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-              </div>
-   </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/computer networking.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/java.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/javascript.jpg" width="100%" height="200"  alt="">
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/linux.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/python.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/sql.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/php.jpg" width="100%" height="200"  alt="">
-
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
-        </div>
       </div>
     </div>
-    <hr class="dropdown-divider">
-  </div>
 
+      <div class="carousel-item">
+        <img src="img/books/main.jpg" class="d-block w-100" style="height: 30rem;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/books/main1.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
   
 
-
-  <!-- historical books -->
-  <div class="container my-5">
-<h3 class="his-one text-success fs-4">Historical Books</h3>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <img src="img/history-img/bi.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-
-          <div class="card-body">
-            <a href="#"> 
-              <i class="fa-solid fa-star text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star  text-warning"></i>
-              <i class="fa-solid fa-star-half-stroke text-warning"></i>
-            </a>
-            <hr>
-            <p class="card-text text-danger">₹. 1000</p>
-            
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary ">BUY Now</button>
-                <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-              </div>
-   </div>
+<!-- New Arival books section -->
+<div class="container my-4">
+    <h2 class="new text-center">NEW ARRIVALS</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 mt-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/new-1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p>CHEMISTRY </p>
           </div>
+         <p class="para text-primary">ORGANIC CHEMISTRY 9TH ED  </p>
+         <p class="small text-danger">Rs. 5,160</p>
         </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/history-img/hindu.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
 
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
-            </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/new-3.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p>LIBRARY </p>
+          </div>
+         <p class="para text-primary">A GUIDE TO LIBRARY & INFORMATION SCIENCE 2/E (HB) </p>
+         <p class="small text-danger">Rs. 1,180</p>
         </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/history-img/ramayen.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
 
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/new-4.png" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>MSRKETINH</p>
             </div>
-        </div>
-      </div>
+           <p class="para text-primary">Principles of Marketing </p>
+           <p class="small text-danger" >Rs. 1,180</p>
+          </div>
 
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/history-img/bhagbat-gita.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/new-5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>STATISTICS </p>
             </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-            <img src="img/history-img/north.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
+           <p class="para text-primary">USING MULTIVARIATE STATISTICS 6/E (PB)</p>
+           <p class="small text-danger" > ₨2,999</p>
+          </div>
 
-            <div class="card-body">
-              <a href="#"> 
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star  text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </a>
-              <hr>
-              <p class="card-text text-danger">₹. 1000</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                </div>
-     </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/new-6.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>MATHEMATICS</p>
             </div>
-        </div>
+           <p class="para text-primary">TOPOLOGY 2ND EDITION BY JAMES R. MUNKRES</p>
+           <p class="small text-danger" >₨2,099</p>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/new-7.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p> MANAGEMENT</p>
+            </div>
+           <p class="para text-primary">HUMAN RESOURCE MANAGEMENT</p>
+           <p class="small text-danger" >₨4,440</p>
+          </div>
+ 
       </div>
+      <hr>
 </div>
-<hr class="dropdown-divider">
-  </div>
-      
-
-      <!-- love-story books -->
-
-      <div class="container my-5"
-        <h3 class="his-one text-success fs-4 ">Love-story Book</h3>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="img/love-img/muna-madan1.webp" class="his-img m-auto  mt-2" width="100%" height="200" alt="">
-                  <p>Author(s) : Laxmi Prasad Devkota.
-                  </p>
-                  <div class="card-body">
-                    <a href="#"> 
-                      <i class="fa-solid fa-star text-warning"></i>
-                      <i class="fa-solid fa-star  text-warning"></i>
-                      <i class="fa-solid fa-star  text-warning"></i>
-                      <i class="fa-solid fa-star  text-warning"></i>
-                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                    </a>
-                    <hr>
-                    <p class="card-text text-danger">₹. 500</p>
-                    
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-primary ">BUY Now</button>
-                        <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                      </div>
-           </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/love-img/red-white.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                    <p>Author(s) : Casey McQuiston
-                    </p>
-                    <div class="card-body">
-                      <a href="#"> 
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                      </a>
-                      <hr>
-                      <p class="card-text text-danger">₹. 1550</p>
-                      
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-primary ">BUY Now</button>
-                          <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                        </div>
-             </div>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/love-img/enternal.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                    <p>Author(s) : Nellie and Lou Moore
-                    </p>
-                    <div class="card-body">
-                      <a href="#"> 
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                      </a>
-                      <hr>
-                      <p class="card-text text-danger">₹. 1300</p>
-                      
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-primary ">BUY Now</button>
-                          <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                        </div>
-             </div>
-                    </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/love-img/rau.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                    <p>Author(s) :Nagnath S. Inamdar
-                    </p>
-                    <div class="card-body">
-                      <a href="#"> 
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                      </a>
-                      <hr>
-                      <p class="card-text text-danger">₹. 2000</p>
-                      
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-primary ">BUY Now</button>
-                          <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                        </div>
-             </div>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/love-img/strage.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                    <p>Author(s) : Vikrant
-                    </p>
-                    <div class="card-body">
-                      <a href="#"> 
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star  text-warning"></i>
-                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                      </a>
-                      <hr>
-                      <p class="card-text text-danger">₹. 1000</p>
-                      
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-primary ">BUY Now</button>
-                          <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                        </div>
-             </div>
-                    </div>
-                </div>
-              </div>
-        </div>
-        <hr class="dropdown-divider">
-          </div>
 
 
-<!-- gajal books section -->
+<!-- famous textbooks started here -->
 <div class="container my-5">
-    <h3 class="his-one text-success fs-4">Gajal Books</h3>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+    <h2 class="new text-center ">FAMOUS TEXTBOOKS</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 mt-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/famous1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p> SOCIAL SCIENCES </p>
+          </div>
+         <p class="para text-primary">MCQs BANK OF LIBRARY AND INFORMATION SCIENCE APTITUDE TEST 3/E (HB)
+        </p>
+         <p class="small text-danger"> ₨1,200</p>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/famous2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p> MATHEMATICS</p>
+          </div>
+         <p class="para text-primary">THOMAS CALCULUS 14/E (PB) </p>
+         <p class="small text-danger"> ₨4,000</p>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/famous3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>BUSINESS</p>
+            </div>
+           <p class="para text-primary">FRANK WOODS BUSINESS ACCOUNTING VOL 1 12/E (PB)
+        </p>
+           <p class="small text-danger" >₨3,300</p>
+          </div>
+
           <div class="col">
             <div class="card shadow-sm">
-              <img src="img/gajal-img/gajal1.webp" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-              <p>Author(s) :  Author: Mohmmad Qureshi 'Nirmal'
-              </p>
-              <div class="card-body">
-                <a href="#"> 
-                  <i class="fa-solid fa-star text-warning"></i>
-                  <i class="fa-solid fa-star  text-warning"></i>
-                  <i class="fa-solid fa-star  text-warning"></i>
-                  <i class="fa-solid fa-star  text-warning"></i>
-                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                </a>
-                <hr>
-                <p class="card-text text-danger">₹. 1000</p>
-                
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary ">BUY Now</button>
-                    <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                  </div>
-       </div>
-              </div>
+              <img src="img/books/famous4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p> MARKETING </p>
             </div>
+           <p class="para text-primary">MARKETING MANAGEMENT 15/E (PB)</p>
+           <p class="small text-danger" > ₨5,460</p>
           </div>
+
           <div class="col">
             <div class="card shadow-sm">
-                <img src="img/gajal-img/gajal2.jpg" class="his-img m-auto mt-2" width="90%" height="225" alt="">
-                <p>Author(s) : Gazal Bharadwaj 
-                </p>
-                <div class="card-body">
-                  <a href="#"> 
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                  </a>
-                  <hr>
-                  <p class="card-text text-danger">₹. 1000</p>
-                  
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary ">BUY Now</button>
-                      <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                    </div>
-         </div>
-                </div>
+              <img src="img/books/famous6.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>COMPUTER SCIENCE</p>
             </div>
+           <p class="para text-primary">C++ HOW TO PROGRAM 10/E (PB)</p>
+           <p class="small text-danger" >₨4,700</p>
           </div>
+
           <div class="col">
             <div class="card shadow-sm">
-                <img src="img/gajal-img/gajal4.jpg" class="his-img m-auto mt-2" width="90%" height="220" alt="">
-                <p>Author(s) : Rabindranath Tagore 
-                </p>
-                <div class="card-body">
-                  <a href="#"> 
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                  </a>
-                  <hr>
-                  <p class="card-text text-danger">₹. 1000</p>
-                  
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary ">BUY Now</button>
-                      <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                    </div>
-         </div>
-                </div>
+              <img src="img/books/famous5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>  GARG</p>
             </div>
+           <p class="para text-primary">BD CHAURASIA’S HANDBOOK OF GENERAL ANATOMY 5/E (PB)</p>
+           <p class="small text-danger" >₨1,440</p>
           </div>
-    
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="img/gajal-img/gajal5.jpg" class="his-img m-auto mt-2" width="90%" height="213" alt="">
-                <p>Author(s) :Prakash Bikalpa
-                </p>
-                <div class="card-body">
-                  <a href="#"> 
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                  </a>
-                  <hr>
-                  <p class="card-text text-danger">₹. 420</p>
-                  
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary ">BUY Now</button>
-                      <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                    </div>
-         </div>
-                </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="img/gajal-img/gajal5.webp" class="his-img m-auto mt-2" width="90%" height="215" alt="">
-                <p>Author(s) :sita baisali
-                </p>
-                <div class="card-body">
-                  <a href="#"> 
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star  text-warning"></i>
-                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                  </a>
-                  <hr>
-                  <p class="card-text text-danger">₹. 1000</p>
-                  
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary ">BUY Now</button>
-                      <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                    </div>
-         </div>
-                </div>
-            </div>
-          </div>
-    </div>
-    <hr class="dropdown-divider">
+ 
       </div>
+      <hr>
+</div>
 
-    
-          <!-- sciences books section -->
-          <div class="container my-5">
-            <h3 class="his-one text-success fs-4">Comedy Books</h3>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <img src="img/comedy-img/comedy.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-                      <p>Author(s) :  Hipster Hitle
-                      </p>
-                      <div class="card-body">
-                        <a href="#"> 
-                          <i class="fa-solid fa-star text-warning"></i>
-                          <i class="fa-solid fa-star  text-warning"></i>
-                          <i class="fa-solid fa-star  text-warning"></i>
-                          <i class="fa-solid fa-star  text-warning"></i>
-                          <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                        </a>
-                        <hr>
-                        <p class="card-text text-danger">₹. 1000</p>
-                        
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-primary ">BUY Now</button>
-                            <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                          </div>
-               </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/comedy-img/comedy.jfif" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-                        <p>Author(s) : David Sipress
-                        </p>
-                        <div class="card-body">
-                          <a href="#"> 
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                          </a>
-                          <hr>
-                          <p class="card-text text-danger">₹. 1100</p>
-                          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-primary ">BUY Now</button>
-                              <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                            </div>
-                 </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/comedy-img/comedy2.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-                        <p>Author(s) : Kevin Kwan
-                        </p>
-                        <div class="card-body">
-                          <a href="#"> 
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                          </a>
-                          <hr>
-                          <p class="card-text text-danger">₹. 1100</p>
-                          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-primary ">BUY Now</button>
-                              <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                            </div>
-                 </div>
-                        </div>
-                    </div>
-                  </div>
-            
-                  <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/comedy-img/comedy3.jpg" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-                        <p>Author(s) : David Sedaris ·
-                        </p>
-                        <div class="card-body">
-                          <a href="#"> 
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                          </a>
-                          <hr>
-                          <p class="card-text text-danger">₹. 1150</p>
-                          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-primary ">BUY Now</button>
-                              <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                            </div>
-                 </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/comedy-img/comedy3.webp" class="his-img m-auto mt-2" width="90%" height="250" alt="">
-                        <p>Author(s) : T Nick de Semlyen
-                        </p>
-                        <div class="card-body">
-                          <a href="#"> 
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star  text-warning"></i>
-                            <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                          </a>
-                          <hr>
-                          <p class="card-text text-danger">₹. 1090</p>
-                          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-primary ">BUY Now</button>
-                              <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                            </div>
-                 </div>
-                        </div>
-                    </div>
-                  </div>
+<!-- solds books -->
+<div class="container-fluid" style="background-color: rgb(247, 224, 218);">
+    <h2  class=" sold text-center">BOOKSINN OFFERS THE BEST COLLECTION OF ACADEMIC BOOKS  & SOLDS<br> ONLINE OUR LIBRARY </h2>
+ 
+    <div class="row d-flex ">
+       <div class="col-lg-3 col-md-6 col-12 text-center ">
+          <img src="img/books/sold1.png" alt="">
+          <p>BASIC SCIENCES</p>
+          <button type="button" class="btn btn-danger ">FIND BOOKS</button>
+       </div>
+       <div class="col-lg-3 col-md-6 col-12 text-center ">
+        <img src="img/books/sold2.png" alt="">
+        <p>SOCIAL SCIENCES</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+       </div>
+       <div class="col-lg-3 col-md-6 col-12 text-center ">
+        <img src="img/books/sold3.png" alt="">
+        <p>MANAGEMENT SCIENCES</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+       </div>
+       <div class="col-lg-3 col-md-6 col-12 text-center ">
+        <img src="img/books/sold4.png" alt="">
+        <p>ENGINEERING</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+       </div>
+    </div>
+
+    <div class="row d-flex my-5">
+      <div class="col-lg-3 col-md-6 col-12 text-center ">
+         <img src="img/books/sold5.png" alt="">
+         <p>BIOLOGICAL SCIENCES</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 text-center ">
+       <img src="img/books/sold6.png" alt="">
+       <p>MEDICAL SCIENCES</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 text-center ">
+       <img src="img/books/sold7.png" alt="">
+       <p>REFRENCE</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 text-center ">
+       <img src="img/books/sold8.png" alt="">
+       <p>ART</p>
+          <button type="button" class="btn btn-danger">FIND BOOKS</button>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- medical books -->
+<div class="container my-5">
+    <h2 class="new text-center ">MEDICAL BOOKS</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 mt-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/medical1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p> NON</p>
+          </div>
+         <p class="para text-primary">FARQUHARSONS TEXTBOOK OF OPERATIVE GENERAL SURGERY 10/E ISE (PB)
+        </p>
+         <p class="small text-danger"> ₨14,630</p>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/books/medical2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+            <p>  UNCATEGORIZED</p>
+          </div>
+         <p class="para text-primary">GOLDMAN-CECIL MEDICINE 26/E 2 VOL SET (HB)  </p>
+         <p class="small text-danger"> ₨23,505</p>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/medical3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p> BURNAND</p>
             </div>
-            <hr class="dropdown-divider">
+           <p class="para text-primary">BROWSE’S INTRODUCTION TO THE SYMPTOMS & SIGNS OF SURGICAL DISEASE 5/E (PB)
+        </p>
+           <p class="small text-danger" >₨11,780</p>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/medical4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>ANATOMY</p>
+            </div>
+           <p class="para text-primary">ATLAS OF HUMAN ANATOMY IE 7/E (PB)</p>
+           <p class="small text-danger" > ₨5,550</p>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/medical5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>MEDICINE</p>
+            </div>
+           <p class="para text-primary">DORLAND’S POCKET MEDICAL DICTIONARY 29/E (PB)</p>
+           <p class="small text-danger" >₨2,560</p>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/books/medical7.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"  alt="">
+              <p>   MEDICAL SCIENCES</p>
+            </div>
+           <p class="para text-primary">BAILEY & LOVE SHORT PRACTICE OF SURGERY 27/E 2 VOL SET (PB)</p>
+           <p class="small text-danger" > ₨7,500</p>
+          </div>
+ 
+      </div>
+      <hr>
+</div>
+
+
+
+
+<!-- add type -->
+<div class="container my-3">
+    <img src="img/books/two-one-two.png " class="img-fluid w-100 h-25" alt="...">
+</div>
+
+<!--  -->
+<div class="container">
+    <div class="container my-5">
+        <h2 class="new text-center ">ADDED BOOKS</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mt-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="img/books/sat.png" class="bd-placeholder-img card-img-top" width="100%" height="300"  alt="">
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="img/books/GAT.png" class="bd-placeholder-img card-img-top" width="100%" height="300"  alt="">
+              </div>
+            </div>
+    
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="img/books/GMAT.png" class="bd-placeholder-img card-img-top" width="100%" height="300"  alt="">
+                </div>
+            </div>
+               
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="img/books/ilets.png" class="bd-placeholder-img card-img-top" width="100%" height="300"  alt="">
+                </div>
+              
+              </div>  
+     
+          </div>
+          <hr>
+    </div>
+    
+</div>
+ 
+<div class="containeer text-center mx-3">
+    <button type="button" class="btn btn-danger btn-lg m-auto ">Explore more <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <!-- footer section -->
+  <div class="container-fluid mt-5" style="background-color: rgb(12, 12, 107);">
+    <footer class="footer-section ng-scope">
+      <div class="container footer-top">
+        <div class="row">
+          <!-- widget -->
+          <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+            <div class="about-widget">
+              <div class="fw-title text-light mt-4 mb-3" style="margin-top: 10px;">ABOUT COMPANY</div>
+              <div class="dobule-link" style="margin-top: -10px;">
+                <ul>
+                  <li class="list-unstyled "><a class="text-light text-decoration-none" href="/">Home</a></li>
+                  <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank"
+                      href="http://visionet.in/about.html">About Us</a></li>
+                  <li class="list-unstyled "><a class="text-light text-decoration-none" href="contact.html">Contact
+                      Us</a></li>
+                  <li class="list-unstyled "><a class="text-light text-decoration-none" href="contact.html">Enquiry</a>
+                  </li>
+                  <li class="list-unstyled "><a class="text-light text-decoration-none" href="support.html">Support</a>
+                  </li>
+                </ul>
               </div>
 
-              <!-- sciences and others book -->
-              <div class="container my-5">
-                <h3 class="his-one text-success fs-4">Science-Books</h3>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
-                      <div class="col">
-                        <div class="card shadow-sm">
-                          <img src="img/science-book/bio.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                          <p>Author(s) :William H. Elliott
-                          </p>
-                          <div class="card-body">
-                            <a href="#"> 
-                              <i class="fa-solid fa-star text-warning"></i>
-                              <i class="fa-solid fa-star  text-warning"></i>
-                              <i class="fa-solid fa-star  text-warning"></i>
-                              <i class="fa-solid fa-star  text-warning"></i>
-                              <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                            </a>
-                            <hr>
-                            <p class="card-text text-danger">₹. 2000</p>
-                            
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary ">BUY Now</button>
-                                <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                              </div>
-                   </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/science-book/chemistry.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                            <p>Author(s) : E. Brian Smith 
-                            </p>
-                            <div class="card-body">
-                              <a href="#"> 
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                              </a>
-                              <hr>
-                              <p class="card-text text-danger">₹. 2220</p>
-                              
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                                </div>
-                     </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/science-book/physics.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                            <p>Author(s) : Thomas Beddoes
-                            </p>
-                            <div class="card-body">
-                              <a href="#"> 
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                              </a>
-                              <hr>
-                              <p class="card-text text-danger">₹. 1000</p>
-                              
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                                </div>
-                     </div>
-                            </div>
-                        </div>
-                      </div>
-                
-                      <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/science-book/statics.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                            <p>Author(s) : Robert S. Witte
-                            </p>
-                            <div class="card-body">
-                              <a href="#"> 
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                              </a>
-                              <hr>
-                              <p class="card-text text-danger">₹. 1780</p>
-                             
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                                </div>
-                     </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/science-book/business.jpg" class="his-img m-auto mt-2" width="90%" height="200" alt="">
-                            <p>Author(s) : Eric Ries
-                            </p>
-                            <div class="card-body">
-                              <a href="#"> 
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star  text-warning"></i>
-                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                              </a>
-                              <hr>
-                              <p class="card-text text-danger">₹. 18800</p>
-                              
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-primary ">BUY Now</button>
-                                  <button type="button" class="btn btn-danger ms-1 ">Add to Cart</button>
-                                </div>
-                     </div>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-                  </div>
-
- <!-- footer section -->
-
- <div class="container-fluid mt-5" style="background-color: rgb(12, 12, 107);">
-  <footer class="footer-section ng-scope">
-    <div class="container footer-top">
-      <div class="row">
-        <!-- widget -->
-        <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
-          <div class="about-widget">
-            <div class="fw-title text-light mt-4 mb-3" style="margin-top: 10px;">ABOUT COMPANY</div>
-            <div class="dobule-link" style="margin-top: -10px;">
-              <ul>								
-                <li class="list-unstyled "><a class="text-light text-decoration-none" href="/">Home</a></li>
-                <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="http://visionet.in/about.html">About Us</a></li>							
-                <li class="list-unstyled "><a class="text-light text-decoration-none" href="contact.html">Contact Us</a></li>
-                <li class="list-unstyled "><a class="text-light text-decoration-none" href="contact.html">Enquiry</a></li>								
-                <li class="list-unstyled "><a class="text-light text-decoration-none" href="support.html">Support</a></li>								
-              </ul>						
             </div>
-            
           </div>
-        </div>
-        <!-- widget -->
-        <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
-          <div class="fw-title text-light mt-4 mb-3">SOLUTIONS FOR EDUCATION</div>
-          <div class="dobule-link">
-            <ul>
-              <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href=""a></li>
-              <li class ="list-unstyled"><a class="text-light text-decoration-none" target="_blank" href="">Digital Language Lab</a></li>							
-              <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Digital School</a></li>								
-              <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Digital Lecture Studio</a></li>
-              <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Grievance Redressal Software</a></li>
-            </ul>						
+          <!-- widget -->
+          <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+            <div class="fw-title text-light mt-4 mb-3">SOLUTIONS FOR EDUCATION</div>
+            <div class="dobule-link">
+              <ul>
+                <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="" a></li>
+                <li class="list-unstyled"><a class="text-light text-decoration-none" target="_blank" href="">Digital
+                    Language Lab</a></li>
+                <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Digital
+                    School</a></li>
+                <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Digital
+                    Lecture Studio</a></li>
+                <li class="list-unstyled "><a class="text-light text-decoration-none" target="_blank" href="">Grievance
+                    Redressal Software</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <!-- widget -->
-        
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
-          <div class="fw-title text-light mt-3 mb-4">CONTACT</div>
-          <ul class="contact">
-            <li class="list-unstyled text-light"><p><i class=" fa fa-map-marker"></i> 41-42A, Ashoka Park Main, <br>New Rohtak Road, New Delhi-110035</p></li>
-            <li class="list-unstyled text-light"><p><i class=" fa fa-phone"></i> (+91) 9350679141, (+91) 9350120746</p></li>
-            <li class="list-unstyled text-light"><p><i class=" fa fa-envelope"></i> sales@visionet.in</p></li>						
-          </ul>					
+          <!-- widget -->
+
+
+          <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+            <div class="fw-title text-light mt-3 mb-4">CONTACT</div>
+            <ul class="contact">
+              <li class="list-unstyled text-light">
+                <p><i class=" fa fa-map-marker"></i> 41-42A, Ashoka Park Main, <br>New Rohtak Road, New Delhi-110035</p>
+              </li>
+              <li class="list-unstyled text-light">
+                <p><i class=" fa fa-phone"></i> (+91) 9350679141, (+91) 9350120746</p>
+              </li>
+              <li class="list-unstyled text-light">
+                <p><i class=" fa fa-envelope"></i> sales@visionet.in</p>
+              </li>
+            </ul>
             <div class="social pt-1 ms-4">
               <a href="" target="_blank"><i class=" text-light fa-brands fa-facebook fa-2x"></i></a>
               <a href="" target="_blank"><i class=" text-light fa-brands fa-linkedin fa-2x"></i></i></a>
               <a href="" target="_blank"><i class=" text-light fa-brands fa-instagram fa-2x"></i></i></a>
               <a href="" target="_blank"><i class=" text-light fa-brands fa-youtube fa-2x"></i></i></a>
             </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
-          <a href="https://www.softwaresuggest.com/e-library" target="_blank"><img src="https://www.softwaresuggest.com/award_logo/2020/dark/Best-Support-DARK.png" width="214px"></a>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+            <a href="https://www.softwaresuggest.com/e-library" target="_blank"><img
+                src="https://www.softwaresuggest.com/award_logo/2020/dark/Best-Support-DARK.png" width="214px"></a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- copyright -->
-    <div class="copyright text-center">
-      <div class="container text-light mt-5">
-        <p>
-  Copyright ©  VISIONet Info Solution Pvt. Ltd. All rights reserved. Website: <a href="">www.visionet.in</a></p>
-      </div>		
-    </div>
-  </footer>
-  
+      <!-- copyright -->
+      <div class="copyright text-center">
+        <div class="container text-light mt-5">
+          <p>
+            Copyright © VISIONet Info Solution Pvt. Ltd. All rights reserved. Website: <a href="">www.visionet.in</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
   </div>
 
 
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
-</html>
+</body>
 
+</html>
